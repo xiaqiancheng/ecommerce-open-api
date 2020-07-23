@@ -16,3 +16,6 @@ public/assets
 resources/views
 resources/lang
 /github
+.DS_Store
+/modules/EC.Open.Core/.DS_Store
+/public/.DS_Store

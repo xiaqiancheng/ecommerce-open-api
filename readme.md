@@ -1,5 +1,38 @@
 # 果酱小店开源电商系统
 
+## 安装
+##### 1、安装依赖
+```$xslt
+composer install -vvv
+```
+##### 2、设置 .env
+```$xslt
+cp .env.example .env
+```
+##### 3、应用秘钥
+```$xslt
+php artisan key:generate
+```
+##### 4、发布资源
+```$xslt
+php artisan vendor:publish --all
+```
+##### 5、设定公共磁盘软连接
+```$xslt
+php artisan storage:link
+```
+
+##### 6、执行内置命令完成数据库及其他配置和数据初始化等任务。
+```$xslt
+php artisan ibrand:store-install 
+```   
+##### 7、导入商品数据
+```$xslt
+/modules/EC.Open.Core/database/goods_demo_data.sql 
+```
+
+
+
 > 重要说明：因为团队精力有限，纯开源的免费版本推进不下去，推出了会员制的版本，拥有直播，砍价，分销，拼团，秒杀，多供应商，微信群折扣，新人礼等的果酱小店版本。欢迎添加 微信号： chenbidexq 咨询。
 
 > 同时： 果酱小店小程序，我们作为真实的项目在运营，产品会不断更新迭代。
